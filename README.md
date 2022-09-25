@@ -1,7 +1,7 @@
 # blog-website
 Responsive blog website using flexbox, grid and media queries
 
-# Demo of the web
+# Demo of the website
 
 ## Home page
 
