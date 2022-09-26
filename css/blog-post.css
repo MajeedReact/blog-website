@@ -1,7 +1,5 @@
 @import url("style.css");
 
-
-
 /* flex */
 .author {
   display: flex;
@@ -18,6 +16,16 @@
   background-image: url("https://images.cars.com/cldstatic/wp-content/uploads/ford-mustang-gt-2024-01-exterior-front-angle-scaled.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.blog-img {
+  background: url("https://th.bing.com/th/id/R.f153c44b93c037a02fae9cf53c927a04?rik=kC4d5gaiApaOWA&pid=ImgRaw&r=0");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  width: 80%;
+  height: 50vh;
+  border-radius: 1em;
 }
 
 ul {
@@ -38,11 +46,4 @@ ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
-
-.social-icon img {
-  width: 80px;
-  width: 80px;
-  border-radius: 50%;
-  margin: 0 10px;
 }

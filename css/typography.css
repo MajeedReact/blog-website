@@ -49,3 +49,7 @@ a {
     text-decoration: none;
     margin-top: 1.5em;
 }
+
+.img-caption {
+    text-align: center;
+}
