@@ -1,0 +1,15 @@
+.card {
+    border-radius: 1em;
+    padding: 10px;
+    height: 400px;
+    margin: 4em 1em;
+    color: #000;
+    background-color: #edede9;
+}
+
+
+@media (min-width: 735px) {
+    .card {
+        height: 500px;
+    }
+}

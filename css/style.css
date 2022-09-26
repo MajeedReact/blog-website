@@ -1,7 +1,13 @@
+@import url("card.css");
+@import url("typography.css");
+@import url("images.css");
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  min-height: 100vh;
 }
+
 .container {
   display: grid;
   grid-template-columns: 100%;
@@ -17,21 +23,12 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+
 .header {
   grid-area: hd;
   background-color: #dda15e;
 }
 
-a {
-  text-decoration: none;
-  margin-top: 1.5em;
-}
-
-.header-title {
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  border-bottom: 2px solid gray;
-}
 .footer {
   grid-area: ft;
   display: flex;
@@ -39,27 +36,7 @@ a {
   align-items: center;
   background-color: #323542;
 }
-.continue-parent {
-  display: flex;
-  justify-content: center;
-}
-.continue {
-  width: 50%;
-  text-align: center;
-  font-size: 1.3em;
-  border: 2px solid #323542;
-  border-radius: 0.5em;
-  padding: 2px 5px;
-  margin: 5px 0px;
-  color: #000;
-}
-.continue:hover {
-  background-color: #323542;
-  color: white;
-}
-.footer a {
-  color: white;
-}
+
 .sidebar {
   grid-area: sd;
   display: flex;
@@ -68,36 +45,17 @@ a {
   background-color: #f8f9fa;
   padding: 10px 10px;
 }
+
 .content {
   grid-area: main;
 }
-#blogs {
-  text-align: center;
-}
+
 #nestedGrid {
   display: grid;
   grid-template-columns: 100%;
   grid-auto-rows: 20%;
 }
-.article-img {
-  width: 100%;
-  height: 150px;
-  border-radius: 1em;
-  background-image: url("https://images.cars.com/cldstatic/wp-content/uploads/ford-mustang-gt-2024-01-exterior-front-angle-scaled.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.card {
-  border-radius: 1em;
-  padding: 10px;
-  height: 400px;
-  margin: 4em 1em;
-  color: #000;
-  background-color: #edede9;
-}
-.date {
-  color: gray;
-}
+
 
 @media (min-width: 735px) and (max-width: 1000px) {
   .container {
@@ -108,16 +66,11 @@ a {
       "sd main main main main main main main"
       "ft ft ft ft ft ft ft ft";
   }
+
   #nestedGrid {
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     grid-gap: 15px;
-  }
-  .sidebar {
-    background-color: #f8f9fa;
-  }
-  .card {
-    height: 500px;
   }
 }
 
@@ -130,25 +83,11 @@ a {
       "sd main main main main main main main"
       "ft ft ft ft ft ft ft ft";
   }
+
   #nestedGrid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 50% 50%;
     grid-gap: 15px;
   }
-  .date {
-    display: block;
-  }
-  .divide {
-    display: block;
-  }
 
-  .sidebar {
-    background-color: #f8f9fa;
-  }
-  body {
-    min-height: 100vh;
-  }
-  .card {
-    height: 500px;
-  }
 }
